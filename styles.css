@@ -2,7 +2,7 @@
 
 body{
     background-color: #060606;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0;
 }
 
@@ -17,21 +17,28 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    text-align: center;
+    text-align: right;
+    padding-left: 7em;
+    padding-right: 7em;
 }
 
 .nav-bar-ul li{
     display: inline-block;
     padding: 0px 15px 0px 15px;
     font-size: 18px;
+    float: right;
 }
 
+.nav-bar-ul li a:hover{
+    font-weight: 600;
+    color: #2a8500;
+}
 a{
     text-decoration: none;
 }
 
 a:visited{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -49,11 +56,12 @@ h1{
 h1::before{
     content: ' ';
     position: absolute;
-    width: 3em;
-    background: #2A8500;
-    height: .4em;
-    bottom: 0;
+    width: 2.5em;
+    background: #2a8500c1;
+    height: 0.25em;
+    bottom: 0.14em;
     z-index: -1;
+    margin-left: 7.95em;
 }
 
 p{

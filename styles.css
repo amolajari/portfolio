@@ -42,7 +42,19 @@ a:visited{
     text-align: center;
     padding-top: 160px;
 }
+h1{
+    position: relative;
+}
 
+h1::before{
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background: #2A8500;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+}
 
 p{
     text-align: center;

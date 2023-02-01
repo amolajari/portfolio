@@ -26,12 +26,12 @@ body{
     display: inline-block;
     padding: 0px 15px 0px 15px;
     font-size: 18px;
+    font-weight: 300px;
     float: right;
 }
 
 .nav-bar-ul li a:hover{
-    font-weight: 600;
-    color: #2a8500;
+    color: #bdff9f;
 }
 a{
     text-decoration: none;

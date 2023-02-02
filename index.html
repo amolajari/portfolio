@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    
     <title>Amol Ajari🔮</title>
 </head>
 <body>
+    <!-- <script src="script.js"></script> -->
+
     <nav class="nav-bar">
         <ul class="nav-bar-ul">
             <li style="float:left"><a href="index.html">AMOL AJARI 🔮</a></li>
             <li><a href=""> ABOUT </a></li>
-            <li><a href=""> PROJECTS </a></li>
+            <li><a href="#projectsSec"> PROJECTS </a></li>
         </ul>
     </nav>
     <main>
@@ -20,6 +23,58 @@
     <p>Programmer | Designer</p>
 
     </main>
+
+    <div class="scroll">
+        <!-- <p>Scroll Down</p> -->
+        <img src="../images/scroll-down-icon 1.svg" alt="Behance Profile" width="40" height="40">
+    </div>
+
+    <div class="projects" id="projectsSec">
+        <h2 class="title">Projects</h2>
+        
+        <div class="card">
+            <a href="#">
+                <img src="../images/dynamic-island.jpg"  alt="Dynamic island for Android | A concept work" width="95%">
+            </a>
+        </div>
+
+
+          <div class="card">
+            <a href="#">
+            <img src="../images/whatsapp-redesign.jpg"  alt="Flatsmack Films | Logo Design" width="95%">
+            </a>    
+          </div>
+
+
+          <div class="card">
+            <a href="#">
+                <img src="../images/fit-u-go1.jpg"  alt="dataFrank | Logo Design" width="95%">
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="#">
+            <img src="../images/dataFrank.jpg"  alt="Flatsmack Films | Logo Design" width="95%">
+            </a>    
+          </div>
+
+          <div class="card">
+            <a href="#">
+                <img src="../images/flatsmack-films.jpg"  alt="Dynamic island for Android | A concept work" width="95%">
+            </a>
+        </div>
+
+          <div class="card">
+            <a href="#">
+                <img src="../images/aqua-marketing.jpg"  alt="dataFrank | Logo Design" width="95%">
+            </a>
+          </div>
+
+       
+          
+    </div>
+
+
     <footer>
         <ul>
             <li><a href="https://www.behance.net/amolajari" target="_blank"><img src="footer svgs\ph_behance-logo.svg" alt="Behance Profile" width="30" height="30"></a></li>
@@ -28,5 +83,37 @@
             <li><a href="https://twitter.com/AmolAjari" target="_blank"><img src="footer svgs\ph_twitter-logo.svg" alt="Twitter Profile" width="30" height="30"></a></li>
         </ul>
     </footer>
+
+    <script>
+        // Define selector for selecting
+        // anchor links with the hash
+        let anchorSelector = 'a[href^="#"]';
+     
+        // Collect all such anchor links
+        let anchorList =
+            document.querySelectorAll(anchorSelector);
+         
+        // Iterate through each of the links
+        anchorList.forEach(link => {
+            link.onclick = function (e) {
+     
+                // Prevent scrolling if the
+                // hash value is blank
+                e.preventDefault();
+         
+                // Get the destination to scroll to
+                // using the hash property
+                let destination =
+                    document.querySelector(this.hash);
+         
+                // Scroll to the destination using
+                // scrollIntoView method
+                destination.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
+    
 </body>
 </html>

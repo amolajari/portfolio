@@ -38,7 +38,7 @@ body{
     color: #bdff9f;
 }
 
-a, a:link, a:visited, a:focus, a:hover, a:active{
+a, a:link, a:visited, a:focus, a:active{
     color: white;
     text-decoration:none;
     cursor: pointer;
